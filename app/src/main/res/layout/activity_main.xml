@@ -12,5 +12,12 @@
         android:id="@+id/testbutt"
         android:layout_centerInParent="true"
         />
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Login!"
+        android:id="@+id/testbutt2"
+        android:layout_below="@id/testbutt"
+        android:layout_centerHorizontal="true"
+        />
 
 </RelativeLayout>
