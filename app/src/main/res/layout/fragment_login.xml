@@ -5,35 +5,86 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        tools:context=".LoginActivity">
 
-        <!-- Username EditText -->
-        <EditText
-            android:id="@+id/usernameEditText"
+<!--        <ImageView-->
+<!--            android:id="@+id/logoImageView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_launcher_foreground"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:contentDescription="App Logo" />-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"/>
+            android:layout_marginTop="16dp"
+            android:hint="Email">
 
-        <!-- Password EditText -->
-        <EditText
-            android:id="@+id/passwordEditText"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"/>
+            android:layout_below="@id/emailInputLayout"
+            android:layout_marginTop="8dp"
+            android:hint="Password">
 
-        <!-- Login Button -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Button
             android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"/>
+            android:layout_below="@id/passwordInputLayout"
+            android:layout_marginTop="16dp"
+            android:text="Login" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/registerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+
+            android:text="Create your profile here"
+            android:textColor="@color/red" />
+        <TextView
+            android:id="@+id/registerTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:text="Not yet Registered? "
+            android:layout_toLeftOf="@id/registerTextView"
+            android:textColor="#3F51B5" />
+
+    </RelativeLayout>
+
 
 
 </LinearLayout>
