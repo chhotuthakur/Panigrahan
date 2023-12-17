@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please fill Family details"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutFathersName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textViewTitle3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextFathersName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Father's Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutMothersName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textInputLayoutFathersName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextMothersName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mother's Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLayoutGrandfathersName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textInputLayoutMothersName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextGrandfathersName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grandfather's Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLayoutGrandmothersName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/TextInputLayoutGrandfathersName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextGrandmothersName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grandmother's Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutCaste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/TextInputLayoutGrandmothersName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCaste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Caste" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutVarna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textInputLayoutCaste">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextVarna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Varna" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutGotra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textInputLayoutVarna">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextGotra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gotra" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textInputLayoutGotra">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textInputLayoutLocation">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutTOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textInputLayoutDOB">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time of Birth" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Next"
+        android:textSize="18sp"
+        android:layout_below="@id/textInputLayoutTOB"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
